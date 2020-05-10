@@ -34,62 +34,53 @@ function generatePassword(){
 
 
   if(number){
-let num = numbers.split("")
-charactersNeeded = charactersNeeded.concat(num)
-let neededNum = num[Math.floor(Math.random()*num.length)]
-
-guaranteeChar.push(neededNum)
+    var num = numbers.split("")
+    charactersNeeded = charactersNeeded.concat(num)
+    var neededNum = num[Math.floor(Math.random()*num.length)]
+    
+    guaranteeChar.push(neededNum)
 
   }
   if(capitalletters){
+    var capLtr = uuppercase.split("")
+    charactersNeeded = charactersNeeded.concat(capLtr)
+    var neededClet = capLtr[Math.floor(Math.random()*capLtr.length)]
 
-    let capLtr = uuppercase.split("")
-charactersNeeded = charactersNeeded.concat(capLtr)
-let neededClet = capLtr[Math.floor(Math.random()*capLtr.length)]
+    guaranteeChar.push(neededClet)
+  }
 
-guaranteeChar.push(neededClet)
-
-}
   if(lowercaseletters){
-
-    let lowCase = lowercase.split("")
-charactersNeeded = charactersNeeded.concat(lowCase)
-let neededLlet = lowCase[Math.floor(Math.random()*lowCase.length)]
-
-guaranteeChar.push(neededLlet)
+    var lowCase = lowercase.split("")
+    charactersNeeded = charactersNeeded.concat(lowCase)
+    var neededLlet = lowCase[Math.floor(Math.random()*lowCase.length)]
+    guaranteeChar.push(neededLlet)
 
   }
   
   if(special){
-
-    let specChar = specialCharacters.split("")
-charactersNeeded = charactersNeeded.concat(specChar)
-let neededSpec = specChar[Math.floor(Math.random()*specChar.length)]
-
-guaranteeChar.push(neededSpec)
+    var specChar = specialCharacters.split("")
+    charactersNeeded = charactersNeeded.concat(specChar) 
+    var neededSpec = specChar[Math.floor(Math.random()*specChar.length)]
+    guaranteeChar.push(neededSpec)
 
   }
-
-for(var i = 0;i<length;i++){
+  
+  for(var i = 0;i<length;i++){
   let random = charactersNeeded[Math.floor(Math.random()*charactersNeeded.length)]
   finalPass.push(random)
-  
 }
 
 for(var t =0;t<guaranteeChar.length;t++){
   finalPass[t] = guaranteeChar[t]
 }
 
+
+// return password
 var x = finalPass.join("")
 
 return x
 
 }
-
-
-// return password
-
-
 
 
 
