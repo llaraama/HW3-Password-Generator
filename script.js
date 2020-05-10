@@ -26,10 +26,10 @@ function generatePassword(){
     alert("error your password should not contain more than 128");
   }
 
-  var number = confirm("do you want numbers")
-  var capitalletters = confirm("do you want numbers")
-  var lowercaseletters = confirm("do you want numbers")
-  var special = confirm()
+  var number = confirm("do you want numbers?")
+  var capitalletters = confirm("do you want capital letters?")
+  var lowercaseletters = confirm("do you want lowercase letters?")
+  var special = confirm("do you want special characters?")
 
 
 
@@ -40,27 +40,34 @@ let neededNum = num[Math.floor(Math.random()*num.length)]
 
 guaranteeChar.push(neededNum)
 
-
-console.log(charactersNeeded)
   }
   if(capitalletters){
 
     let capLtr = uuppercase.split("")
 charactersNeeded = charactersNeeded.concat(capLtr)
-console.log(charactersNeeded)
-  }
+let neededClet = capLtr[Math.floor(Math.random()*capLtr.length)]
+
+guaranteeChar.push(neededClet)
+
+}
   if(lowercaseletters){
 
     let lowCase = lowercase.split("")
 charactersNeeded = charactersNeeded.concat(lowCase)
-console.log(charactersNeeded)
+let neededLlet = lowCase[Math.floor(Math.random()*lowCase.length)]
+
+guaranteeChar.push(neededLlet)
+
   }
   
   if(special){
 
     let specChar = specialCharacters.split("")
 charactersNeeded = charactersNeeded.concat(specChar)
-console.log(charactersNeeded)
+let neededSpec = specChar[Math.floor(Math.random()*specChar.length)]
+
+guaranteeChar.push(neededSpec)
+
   }
 
 for(var i = 0;i<length;i++){
@@ -78,7 +85,6 @@ var x = finalPass.join("")
 return x
 
 }
-
 
 
 // return password
