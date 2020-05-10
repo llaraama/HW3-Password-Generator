@@ -17,19 +17,20 @@ function generatePassword(){
   var finalPass = []
   var guaranteeChar=[]
 
-  var length = prompt("how long of a password do you want")
+  var length = prompt("how long of a password do you want? It can be between 8 to 128 characters.")
+  
+  if(length < 8 ){
+    alert("error your password need to contain at least 8 characters");
+  }
+  else if(length > 128){
+    alert("error your password should not contain more than 128");
+  }
+
   var number = confirm("do you want numbers")
   var capitalletters = confirm("do you want numbers")
   var lowercaseletters = confirm("do you want numbers")
   var special = confirm()
 
-
-  if(length < 8 ){
-alert("your password need to contain at least 8 characters")
-  }
-  else if(length > 128){
-    alert("your password should not contain more than 128")
-  }
 
 
   if(number){
