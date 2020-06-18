@@ -24,13 +24,13 @@ function generatePassword(){
   }
   else if(length > 128){
     alert("error your password should not contain more than 128");
-  }
+  }else{
 
   var number = confirm("do you want numbers?")
   var capitalletters = confirm("do you want capital letters?")
   var lowercaseletters = confirm("do you want lowercase letters?")
   var special = confirm("do you want special characters?")
-
+  }
 
 
   if(number){
