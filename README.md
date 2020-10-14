@@ -1,5 +1,5 @@
 # Password-Generator
-Deployed page:
+## Deployed page:
 https://llaraama.github.io/Password-Generator/
 
  ## Table of Contents:
