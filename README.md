@@ -1,5 +1,5 @@
 # Password-Generator
-## Deployed page:
+### Deployed page:
 https://llaraama.github.io/Password-Generator/
 
  ## Table of Contents:
@@ -22,7 +22,6 @@ https://llaraama.github.io/Password-Generator/
 An application that generates a random password based on user-selected criteria. This app runs in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
 ## User Story
-
 ```
 AS AN employee with access to sensitive data
 I WANT to randomly generate a password that meets certain criteria
@@ -43,4 +42,3 @@ Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git a
 
 ## Technology 
 HTML, CSS and JavaScript
-
